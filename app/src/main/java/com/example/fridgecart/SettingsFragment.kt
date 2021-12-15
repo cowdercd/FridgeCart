@@ -6,15 +6,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.fridgecart.databinding.FragmentErrorBinding
 import com.example.fridgecart.databinding.FragmentSecondBinding
+import com.example.fridgecart.databinding.FragmentSettingsBinding
 
 /**
- *  bluetooth error destination in the navigation.
+ *  settings destination in the navigation.
  */
-class ErrorFragment : Fragment() {
+class SettingsFragment : Fragment() {
 
-    private var _binding: FragmentErrorBinding? = null
+    private var _binding: FragmentSettingsBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -25,14 +25,13 @@ class ErrorFragment : Fragment() {
             savedInstanceState: Bundle?
     ): View? {
 
-        _binding = FragmentErrorBinding.inflate(inflater, container, false)
+        _binding = FragmentSettingsBinding.inflate(inflater, container, false)
         return binding.root
 
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
     }
 
     override fun onDestroyView() {
