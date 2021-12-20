@@ -6,20 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".ErrorFragment">
 
-    <TextView
-        android:id="@+id/textview_error"
+    <ToggleButton
+        android:id="@+id/temp_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:lines="2"
-        android:text="@string/error_string"
-        android:textAlignment="center"
-        android:textAllCaps="true"
-        android:textColor="@color/white"
-        android:textSize="34sp"
+        android:text="ToggleButton"
+        android:textOff="@string/fahrenheit"
+        android:textOn="@string/celsius"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.839"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.226" />
+        app:layout_constraintVertical_bias="0.055" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/temp_string"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/temp_button"
+        app:layout_constraintEnd_toStartOf="@+id/temp_button"
+        app:layout_constraintHorizontal_bias="0.317"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/temp_button" />
 </androidx.constraintlayout.widget.ConstraintLayout>
