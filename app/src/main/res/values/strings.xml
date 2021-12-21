@@ -15,7 +15,6 @@
     <string name="celsius">Celsius</string>
 
     <string name="connect_button_string">Connect Bluetooth</string>
-    <string name="no_bluetooth_string">No Bluetooth Connected</string>
 
     <string name="title_string">FridgeCart</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>

@@ -1,5 +1,6 @@
 package com.example.fridgecart
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -33,6 +34,11 @@ class FirstFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        binding.buttonConnect.setOnClickListener {
+            val intent = Intent(this@MainActivity, SelectDeviceActivity::class.java)
+            startActivity(intent)
+        }
 
         binding.buttonSensors.setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
